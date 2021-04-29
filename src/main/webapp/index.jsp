@@ -14,23 +14,23 @@
 <form style="width: 80%; margin: auto" action="nomina-servlet" method="POST">
     <label for="nombres"><%= "Nombres"%></label>
     <br>
-    <input type="text" name="nombres" id="nombres" class="form-control">
+    <input type="text" name="nombres" id="nombres" class="form-control" required>
     <br><br>
     <label for="apellidos"><%= "Apellidos"%></label>
     <br>
-    <input type="text" name="apellidos" id="apellidos" class="form-control">
+    <input type="text" name="apellidos" id="apellidos" class="form-control" required>
     <br><br>
     <label for="documento"><%= "Documento"%></label>
     <br>
-    <input type="number" name="documento" id="documento" class="form-control">
+    <input type="number" name="documento" id="documento" required class="form-control">
     <br><br>
     <label for="dtrab"><%= "Dias trabajados"%></label>
     <br>
-    <input type="number" name="dtrab" id="dtrab" class="form-control">
+    <input type="number" name="dtrab" id="dtrab" required class="form-control">
     <br><br>
     <label for="sueldo"><%= "Valor del dia"%></label>
     <br>
-    <input type="number" name="sueldo" id="sueldo" class="form-control">
+    <input type="number" name="sueldo" id="sueldo" required class="form-control">
     <br>
     <br>
     <input type="submit" class="btn btn-dark" value="Calcular">

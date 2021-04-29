@@ -1,7 +1,7 @@
 package com.edu.sena.Nomina.Model;
 
 public class NominaDatos {
-    private int riesgo = 0;
+    private int riesgo = 2;
     private boolean contrato = false;
     private int dt;
     private double sueldo;
@@ -34,7 +34,7 @@ public class NominaDatos {
     }
 
     private void Total(){
-        this.total = this.sueldo - this.salud - this.pension;
+        this.total = this.sueldo - this.salud - this.pension - this.arl;
     }
 
     private void CalcularPension(){
